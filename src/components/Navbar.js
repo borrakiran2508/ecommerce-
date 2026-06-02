@@ -337,15 +337,6 @@ const linkStyle = (darkMode) => ({
   fontWeight: "500",
 });
 
-const themeBtn = {
-  padding: "8px 14px",
-  border: "none",
-  borderRadius: "6px",
-  cursor: "pointer",
-  backgroundColor: "#4f46e5",
-  color: "#fff",
-  fontWeight: "bold",
-};
 
 const loginBtn = {
   textDecoration: "none",

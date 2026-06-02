@@ -137,12 +137,6 @@ const title = {
   color: "#111827",
 };
 
-const subtitle = {
-  textAlign: "center",
-  marginBottom: "30px",
-  color: "#6b7280",
-};
-
 const inputGroup = {
   marginBottom: "20px",
 };
