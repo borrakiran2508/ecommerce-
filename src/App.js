@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Seller from "./pages/Seller";
-import Admin from "./pages/Admin";
+import SellerDashboard from "./pages/seller/SellerDashboard";
+import AdminDashboard from "./pages/admin/AdminDashboard";
 import Login from "./pages/Login"
 import Register from "./pages/Register";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -17,9 +17,14 @@ import ProductDetails from "./pages/ProductDetails";
 import Products from "./pages/Products"
 import Footer from "./components/Footer"
 import Cart from "./pages/Cart"
+import ManageProducts from "./pages/seller/ManageProducts";
+import SellerOrders from "./pages/seller/SellerOrders";
 
 import  "./App.css";
 import ThemeProvider from "./context/ThemeContext";
+import ManageUsers from "./pages/admin/ManageUsers";
+import ManageOrders from "./pages/admin/ManageOrders";
+
 
 const App = () => {
   return (
@@ -42,11 +47,38 @@ const App = () => {
 
         <Route
           path="/seller"
-          element={<Seller />}
-        /><Route
-          path="/admin"
-          element={<Admin />}
+          element={<SellerDashboard />}
+        
         />
+
+        <Route
+          path="/seller/products"
+          element={<ManageProducts />}
+        />
+
+        <Route
+          path="/seller/orders"
+          element={<SellerOrders />}
+        />
+
+
+
+        <Route
+          path="/admin"
+          element={<AdminDashboard />}
+        />
+
+        <Route
+          path="/admin/users"
+          element={<ManageUsers />}
+       />
+
+        <Route
+          path="/admin/orders"
+          element={<ManageOrders />}
+        />
+
+
         <Route
           path="/dashboard"
           element={

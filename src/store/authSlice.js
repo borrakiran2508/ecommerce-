@@ -27,7 +27,7 @@ export const registerUser =
       try {
         const { data } =
           await axios.post(
-            "http://localhost:5000/register",
+            "https://ecommerce-backend-api-62v2.onrender.com/register",
             userData
           );
 
@@ -51,7 +51,7 @@ export const loginUser =
       try {
         const { data } =
           await axios.post(
-            "http://localhost:5000/login",
+            "https://ecommerce-backend-api-62v2.onrender.com/login",
             userData
           );
 

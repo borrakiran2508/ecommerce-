@@ -94,7 +94,7 @@ function Register() {
           color: "#333",
         }}
       >
-        Register
+        Create Account
       </h2>
 
       {error && (
